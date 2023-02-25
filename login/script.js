@@ -7,16 +7,15 @@ submitBtn.addEventListener("click", (e) => {
     $.ajax({
         url: host,
         type: "POST",
-        data: {
+        data: JSON.stringify({
             email: $("#email").val(),
             password: $("#password").val(),
-        },
+        }),
+        headers: {'Content-Type': 'application/json'},
         success: function (data) {
-            console.log("success")
-            console.log(data)
+            // move to channel page
         },
         error: function(data) {
-            console.log(data)
         }
     })
 })
