@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="center__container">
+    <div></div>
+    <div class="login__container">
+        <div class="origin__login__container">
+            <form id="origin-login" onsubmit="return false;">
+                <div class="input__box text__input__box">
+                    <input class="text__input" type="text" name="email" id="email" required="required">
+                </div>
+                <div class="input__box text__input__box">
+                    <input class="text__input" type="password" name="password" id="password" required="required">
+                </div>
+                <div class="input__box">
+                    <button id="submit-btn">Login</button>
+                </div>
+                <div class="input__box">
+                    <button id="recovery-btn">I forgot password</button>
+                </div>
+            </form>
+        </div>
+        <div class="contour">
+            <div class="contour__line"></div>
+            <div class="contour__text">
+                <p id="contour">OR</p>
+            </div>
+        </div>
+        <div class="social__login__container">
+            <div class="platform__container input__box" id="social-login-github">
+                <div class="logo__container">
+                    <img src="./github-logo.png" alt="" srcset="">
+                </div>
+                <div class="text__container">
+                    <p>Sign in with Github</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signup__container">
+        <p>Don't have account?</p>
+        <a id="signup" href="../signup">Sign up</a>
+    </div>   
+</body>
+<script src="./script.js"></script>
+</html>
